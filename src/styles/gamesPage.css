@@ -1,0 +1,204 @@
+.games-page { max-width: 1100px; }
+
+/* --- Лягушка --- */
+.frog-game {
+  position: relative;
+  margin: 60px 0;
+  padding-bottom: 40px;
+}
+
+/* Сама лягушка — абсолютно позиционируется внутри .frog-game координатами top/left в пикселях,
+   которые вычисляются в JS. Переход по этим свойствам и даёт эффект "прыжка". */
+.frog-character {
+  position: absolute;
+  width: 180px;             /* было 90px — теперь вдвое больше */
+  height: auto;
+  transform: translate(-50%, -50%);
+  transition: top 0.6s ease, left 0.6s ease;
+  z-index: 5;
+}
+
+.start-stone-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px; /* расстояние до первого ряда кувшинок */
+}
+
+.start-stone {
+  width: 100px;
+  height: 40px;
+  background: var(--color-brown);
+  opacity: 0.35;
+  border-radius: 50%;
+}
+
+.lily-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 180px; /* расстояние до следующего ряда */
+  flex-wrap: wrap;
+}
+
+.lily-pad-img {
+  width: 260px;          /* было 130px — теперь вдвое больше */
+  height: auto;
+}
+.lily-pad-img.faded { opacity: 0.35; }
+.lily-pad-img.chosen { opacity: 1; }
+
+.lily-pad-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.lily-pad-btn img {
+  width: 260px;           /* было 130px */
+  height: auto;
+}
+.lily-pad-btn:hover img { transform: scale(1.05); }
+.lily-pad-btn.miss img {
+  filter: drop-shadow(0 0 14px var(--color-red));
+}
+
+@media (max-width: 720px) {
+  .lily-row { gap: 40px; }
+  .lily-pad-img, .lily-pad-btn img { width: 180px; }
+  .frog-character { width: 130px; }
+}
+
+/* --- Шифр-загадки --- */
+.emoji-riddle-section { margin: 70px 0; text-align: center; }
+
+.emoji-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+  margin: 30px auto;
+  font-size: 22px;
+}
+.legend-pair {
+  background: #fffdf8;
+  border: 1px solid var(--color-gold);
+  border-radius: 8px;
+  padding: 5px 12px;
+}
+
+.emoji-cipher {
+  font-size: 36px;
+  letter-spacing: 8px;
+  margin: 40px 0 24px;
+   white-space: pre-line;
+}
+
+.emoji-answer-input {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 12px 18px;
+  border: 1px solid var(--color-olive-light);
+  border-radius: 8px;
+  text-align: center;
+  min-width: 260px;
+}
+
+.emoji-solved-answer {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--color-olive-dark);
+  margin-top: 10px;
+}
+
+/* --- Финальная игра --- */
+.final-match { text-align: center; margin: 70px 0; }
+
+.final-match-photo {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(86, 57, 34, 0.2);
+  border: 5px solid var(--color-brown);
+  border-radius: 16px;
+}
+
+.final-options-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.final-option {
+  padding: 14px;
+  border: 1px solid var(--color-gold);
+  background: #fff;
+  border-radius: 8px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.final-option:hover { transform: translateY(-2px); }
+.final-option.selected {
+  border-color: var(--color-olive-dark);
+  background: rgba(107, 139, 61, 0.15);
+}
+
+.final-target-slot {
+  display: block;
+  margin: 24px auto;
+  width: 180px;
+  height: 60px;
+  border: 2px dashed var(--color-olive-dark);
+  background: #fff;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.final-match-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.attempts-left { color: var(--color-brown); font-style: italic; }
+
+.final-solved-answer {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--color-olive-dark);
+  margin-top: 20px;
+}
+
+/* --- Фото победы --- */
+.winner-photo-block {
+  text-align: center;
+  margin: 70px 0;
+}
+
+.winner-photo-frame {
+  display: inline-block;
+  padding: 12px;
+  background: #fffdf8;
+  border: 3px solid var(--color-brown);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(86, 57, 34, 0.25);
+}
+
+.winner-photo-frame img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}

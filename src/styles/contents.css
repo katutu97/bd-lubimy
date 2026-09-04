@@ -1,0 +1,72 @@
+
+/* === Оглавление === */
+.contents-page {
+  padding-top: 20px;
+}
+
+.contents-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contents-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(231, 193, 122, 0.3);
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.contents-list li:hover {
+  background: rgba(255, 253, 248, 0.2);
+  border-bottom-color: var(--color-gold);
+  transform: translateX(4px);
+}
+
+.contents-list a {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--color-brown);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  flex: 1;
+  text-align: left;
+}
+
+.contents-list a:hover {
+  color: var(--color-olive-dark);
+}
+
+
+/* Декоративный разделитель справа */
+.contents-list .chapter-ornament {
+  color: var(--color-gold);
+  font-size: 30px;
+  margin-left: 16px;
+  flex-shrink: 0;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.contents-list li:hover .chapter-ornament {
+  opacity: 1;
+}
+
+/* Ссылка заключения — особая */
+.contents-list .closing-link {
+  font-family: var(--font-hero);
+  font-size: 24px;
+  color: var(--color-olive-dark);
+}
+
+.contents-list .closing-link:hover {
+  color: var(--color-brown);
+}

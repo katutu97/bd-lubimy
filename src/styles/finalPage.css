@@ -1,0 +1,264 @@
+.me-page { max-width: 900px; }
+
+
+
+/* --- Reveal button --- */
+.reveal-button {
+  display: block;
+  margin: 60px auto;
+  padding: 16px 44px;
+  background: transparent;
+  border: 1px solid var(--color-olive-dark);
+  color: var(--color-olive-dark);
+  border-radius: 30px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+.reveal-button:hover {
+  box-shadow: 0 0 20px var(--color-olive-light);
+  background: rgba(107, 139, 61, 0.08);
+}
+
+/* --- Hero --- красивая рамка вместо простой линии */
+.hero-section {
+  display: block;
+  gap: 50px;
+  align-items: center;
+  margin: 5px 0;
+  overflow: hidden;
+  padding: 20px; 
+}
+
+.hero-photo-frame {
+  float: left;
+  flex: 0 0 auto; 
+  width: 400px;
+  margin-right: 50px;
+  margin-bottom: 30px; 
+  padding: 16px;
+  background: #fffdf8;
+  border: 2px solid var(--color-gold);
+  box-shadow:
+    0 0 0 6px var(--color-cream),
+    0 0 0 7px var(--color-olive-light),
+    0 20px 40px rgba(86, 57, 34, 0.2);
+}
+.hero-photo-frame img { width: 100%; display: block; height: auto;  }
+.hero-text-block p{ flex: 1; font-size: 21px; line-height: 1.8; font-style: normal;  text-align: justify; text-indent: 50px;  }
+.hero-text-block i{ font-style: italic; color: var(--color-olive-dark); }
+@media (max-width: 720px) { .hero-section { flex-direction: column; } }
+
+/* --- Timeline --- */
+.timeline-section { text-align: center; margin: 5px 0; } 
+.timeline-sentence { white-space: pre-line;  font-family: var(--font-body); font-weight: 400; font-size: clamp(24px, 3vw, 32px); margin: 0 auto 15px; max-width: 1000px;}
+.timeline-arrows { width: 100%; max-width: 900px; height: 140px; display: block; margin: 0 auto; }
+.timeline-events { display: flex; justify-content: center; align-items: flex-start; gap: 40px; flex-wrap: wrap; }
+.timeline-event { display: flex; flex-direction: column; align-items: center; width: 200px; }
+.timeline-photo-frame {
+
+  border: 3px solid var(--color-brown);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(86, 57, 34, 0.25);
+}
+.timeline-photo-frame img { width: 180px; height: 240px; object-fit: cover; display: block; border-radius: 10px; }
+.event-date {
+  margin-top: 16px;
+  padding: 8px 20px;
+  background: var(--color-brown);
+  color: var(--color-cream);
+  font: size 14px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(86, 57, 34, 0.3);
+}
+.straight-arrow {
+  margin-bottom: 4px;
+}
+/* На узких экранах, где 4 колонки не влезают в ряд — красиво переносятся по 2 */
+@media (max-width: 900px) {
+  .timeline-events { gap: 30px; }
+  .timeline-event { width: 45%; }
+}
+
+/* --- Date match game --- */
+.date-match-game { margin: 30px auto; max-width: 1000px; }
+.events-list { 
+  display: grid;              /* ← сетка вместо колонки */
+  grid-template-columns: 1fr 1fr;  /* ← два столбика */
+  gap: 10px 30px;             /* ← отступ между строками и столбцами */
+  margin-bottom: 20px;
+}
+.event-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.event-name { flex: 1; text-align: left; }
+.date-slot { width: 120px; height: 40px; border: 1px dashed var(--color-olive-dark); background: #fff; color: var(--color-text); font-family: var(--font-body); }
+.date-slot.correct { border: 1px solid var(--color-olive-dark); background: rgba(107, 139, 61, 0.25); box-shadow: 0 0 10px var(--color-olive-light); }
+.date-slot.wrong { border: 1px solid var(--color-red); background: rgba(168, 39, 0, 0.15); }
+.dates-pool { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 24px 0; }
+.date-chip { padding: 8px 14px; background: var(--color-gold); border: 1px solid var(--color-brown); color: var(--color-brown); }
+.date-chip.selected { background: var(--color-olive-light); color: #fff; }
+.game-buttons { display: flex; gap: 12px; justify-content: center; margin-top: 10px; }
+
+/* --- Gallery carousel --- */
+.gallery-section { margin: 80px 0 180px; text-align: center; }
+.gallery-text { max-width: 600px; margin: 0 auto 30px; }
+.carousel { display: flex; align-items: center; justify-content: center; gap: 20px; }
+.carousel-track { display: flex; align-items: center; gap: 160px; height: 472px;}
+.carousel-item {   display: flex; flex-direction: column; align-items: center; }
+.carousel-item.side {  gap: 0; align-self: center;  height: 220px; flex-shrink: 0;}
+.carousel-item.main {  position: relative; gap: 12px; align-self: center; justify-content: center; max-width: 654px; width: 100%; height: 472px;}
+.carousel-photo { border: 2px solid var(--color-gold); object-fit: cover; transition: all 0.3s ease; }
+.carousel-photo.main { width: 354px; height: 472px; box-shadow: 0 8px 30px rgba(86, 57, 34, 0.2);}
+.carousel-photo.side { width: 160px; height: 220px; filter: blur(8px) brightness(0.8); opacity: 0.6; }
+
+/* === Подписи к фото === */
+.photo-caption {
+  /* абсолютное позиционирование: подпись больше не участвует в расчёте
+     высоты .carousel-item.main → боковые фото и стрелки перестают прыгать */
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* ширина больше, чем фото — доходит почти до боковых фото */
+  width: 660px;
+  max-width: 92vw;
+
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-brown);
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.carousel-item.main:hover .photo-caption {
+  opacity: 1;
+}
+
+/* Боковые фото — подписи скрыты */
+.carousel-item.side .photo-caption {
+  display: none;
+}
+
+/* === Красивые стрелки в кружке === */
+.carousel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(107, 139, 61, 0.15);  /* ← полупрозрачный оливковый */
+  border: 2px solid rgba(107, 139, 61, 0.3);  /* ← полупрозрачная рамка */
+  border-radius: 50%;
+  color: var(--color-olive-dark);
+  font-size: 36px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0; 
+  line-height: 1;
+  text-align: center; 
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.carousel-arrow:hover {
+  transform: scale(1.1);  /* ← увеличивается при наведении */
+  background: rgba(107, 139, 61, 0.25);  /* ← чуть насыщеннее */
+  border-color: var(--color-olive-dark);
+  box-shadow: 0 4px 20px rgba(107, 139, 61, 0.2);
+}
+
+.carousel-arrow:active {
+  transform: scale(0.95);
+}
+
+/* === Индикатор (точки внизу) === */
+.carousel-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  margin-top: 110px; /* ← отступ сверху */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--color-olive-dark);
+  border-color: var(--color-olive-dark);
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: var(--color-olive-light);
+  transform: scale(1.1);
+}
+
+/* --- Memory game --- */
+.memory-game { margin: 30px auto; }
+.memory-grid { display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: repeat(5, 1fr); gap: 10px; max-width: 900px; margin: 0 auto; }
+.memory-card { aspect-ratio: 1 / 1; padding: 0; border: 2px solid var(--color-gold); background: var(--color-brown); overflow: hidden; }
+.memory-card-back { display: block; width: 100%; height: 100%; background: repeating-linear-gradient(45deg, var(--color-brown), var(--color-brown) 6px, #4a2f1c 6px, #4a2f1c 12px); }
+.memory-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.memory-card.matched { box-shadow: 0 0 14px 3px #A3B86A; border-color: #6B8B3D; }
+.memory-card.wrong { box-shadow: 0 0 14px 3px var(--color-red); border-color: var(--color-red); }
+/* --- идет загрузка страницы --- */
+.memory-loading {
+  text-align: center;
+  color: var(--color-brown);
+  font-style: italic;
+  padding: 40px 0;
+}
+
+/* --- FAQ --- */
+.faq-section { max-width: 900px; margin: 20px auto 70px; ; text-align: left; }
+.faq-item { border-bottom: 1px solid var(--color-olive-light); padding: 14px 0;  }
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  font-family: var(--font-body);  
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-brown);
+  cursor: pointer;
+  padding: 8px 0;
+  text-align: left;
+}
+.faq-icon { font-size: 22px; transition: transform 0.2s ease; }
+.faq-icon.open { transform: rotate(45deg); }
+/* ← Здесь текст ответа */
+.faq-answer {
+  flex: 1; font-size: 21px; line-height: 1.8; font-style: normal;  text-align: justify; text-indent: 50px; max-width: 800px; margin: 0 auto;
+}
+
+.faq-answer p {
+  font-family: var(--font-body);   /* ← тот же шрифт, что и у p */
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 12px 0;              /* ← отступ между абзацами */
+}
+
+
+/* --- Closing --- */
+.closing-section { max-width: 600px; margin: 60px auto 100px; text-align: center; }
+.closing-text { font-family: var(--font-hero); font-size: clamp(28px, 4vw, 38px); }
