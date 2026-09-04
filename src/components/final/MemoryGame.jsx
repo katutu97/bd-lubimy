@@ -39,7 +39,7 @@ export default function MemoryGame({ onSolved }) {
   const [imagesReady, setImagesReady] = useState(false)
 
   useEffect(() => {
-    const urls = IMAGE_IDS.map((id) => `/photos/final/game/${id}.webp`)
+    const urls = IMAGE_IDS.map((id) => `/bd-lubimy/photos/final/game/${id}.webp`)
     Promise.all(urls.map(preloadImage)).then(() => setImagesReady(true))
   }, [])
 
@@ -95,7 +95,7 @@ export default function MemoryGame({ onSolved }) {
               className={`memory-card ${isOpen ? 'open' : ''} ${isMatched ? 'matched' : ''} ${isWrong ? 'wrong' : ''}`}
               onClick={() => handleCardClick(card)}
             >
-              {isOpen ? <img src={`/photos/final/game/${card.imageId}.webp`} alt="" /> : <span className="memory-card-back" />}
+              {isOpen ? <img src={`/bd-lubimy/photos/final/game/${card.imageId}.webp`} alt="" /> : <span className="memory-card-back" />}
             </button>
           )
         })}

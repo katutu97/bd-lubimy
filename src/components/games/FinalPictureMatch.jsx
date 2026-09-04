@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 // чтобы вопрос отличался от предыдущей попытки
 const POOL = [
   {
-    image: '/photos/games/1.png',
+    image: '/bd-lubimy/photos/games/1.png',
     options: [
       { id: 'a', label: '10 🐸' }, { id: 'b', label: '9 🐳' }, { id: 'c', label: '15 💧' }, { id: 'd', label: '11 🦎' },
       { id: 'e', label: '10 💎' }, { id: 'f', label: '14 🌲' }, { id: 'g', label: '11 🍀' }, { id: 'h', label: '13 🌊' },

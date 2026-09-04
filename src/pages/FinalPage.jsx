@@ -24,7 +24,7 @@ export default function FinalPage() {
     <div className="page me-page">
       <ChapterLabel number="Глава Восьмая" title="Бесконечность" />
 
-      <HeroSection photoSrc="/photos/final/me-1.jpg" />
+      <HeroSection photoSrc="/bd-lubimy/photos/final/me-1.jpg" />
       <TimelineSection sentence={
       `Уже почти 3 года мы идём с тобой рука об руку,
       помогаем и поддерживаем друг друга, хоть и на расстоянии, но всё равно вместе. Мне кажется, у нас есть небольшая традиция — 

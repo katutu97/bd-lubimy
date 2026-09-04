@@ -1,8 +1,8 @@
 const EVENTS = [
-  { photo: '/photos/final/me-2.jpg', date: '09.09.2023' },
-  { photo: '/photos/final/me-3.jpg', date: '08.09.2024' },
-  { photo: '/photos/final/me-4.jpg', date: '14.09.2025' },
-  { photo: '/photos/final/me-5.jpg', date: '05.09.2026' },
+  { photo: '/bd-lubimy/photos/final/me-2.jpg', date: '09.09.2023' },
+  { photo: '/bd-lubimy/photos/final/me-3.jpg', date: '08.09.2024' },
+  { photo: '/bd-lubimy/photos/final/me-4.jpg', date: '14.09.2025' },
+  { photo: '/bd-lubimy/photos/final/me-5.jpg', date: '05.09.2026' },
 ]
 
 function StraightArrow({ id }) {
