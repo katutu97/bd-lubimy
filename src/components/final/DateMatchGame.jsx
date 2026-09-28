@@ -3,8 +3,7 @@ import { useState } from 'react'
 // впиши свои события и правильные даты
 const EVENTS = [
   { id: 'e1', title: 'Ты признался в своиз чувствах ипредложил встречаться', correctDateId: 'd1' },
-  { id: 'e2', title: 'Начала просмотра Сумерек', correctDateId: 'd2' },
-  /*{ id: 'e6', title: 'Поход на студию Рики', correctDateId: 'd6' },
+  { id: 'e6', title: 'Поход на студию Рики', correctDateId: 'd6' },
   { id: 'e4', title: 'Просмотр последней части Сумерек', correctDateId: 'd4' },
   { id: 'e5', title: 'Первое всякое', correctDateId: 'd5' },
   { id: 'e12', title: 'Поехали в город о котором я так долго мечтала', correctDateId: 'd12' },
@@ -17,13 +16,14 @@ const EVENTS = [
   { id: 'e3', title: 'Катались на катке в Москве', correctDateId: 'd3' },
   { id: 'e11', title: 'Ходили в ЦЕХ с моими друзьями и Денис уговорявал тебя дождаться моего ответа', correctDateId: 'd11' },
   { id: 'e15', title: 'Катались на открытом картинге в Осетии', correctDateId: 'd15' },
-  { id: 'e16', title: 'Первый раз ты вез меня на машине', correctDateId: 'd16' },*/
+  { id: 'e2', title: 'Начала просмотра Сумерек', correctDateId: 'd2' },
+  { id: 'e16', title: 'Первый раз ты вез меня на машине', correctDateId: 'd16' },
 ]
 
 const DATES = [
   { id: 'd1', value: '09.09.2023' },
   { id: 'd2', value: '05.11.2023' },
-  /*{ id: 'd3', value: '18.01.2025' },
+  { id: 'd3', value: '18.01.2025' },
   { id: 'd4', value: '29.08.2025' },
   { id: 'd5', value: '26.01.2024' },
   { id: 'd6', value: '24.08.2025' },
@@ -36,7 +36,7 @@ const DATES = [
   { id: 'd13', value: '07.02.2024' },
   { id: 'd14', value: '25.01.2024' },
   { id: 'd15', value: '07.08.2025' },
-  { id: 'd16', value: '22.11.2025' },*/
+  { id: 'd16', value: '22.11.2025' },
 ]
 
 export default function DateMatchGame({ onSolved }) {

@@ -29,7 +29,7 @@ export default function LoginPage() {
 
     if (isCorrect) {
       unlockNext()
-      navigate('/one')
+      navigate('/intro')
     } else {
       setError('Что-то не так... подумай ещё :)')
     }

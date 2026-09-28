@@ -8,8 +8,21 @@ import EmojiRiddleSequence from '../components/games/EmojiRiddleSequence.jsx'
 import FinalPictureMatch from '../components/games/FinalPictureMatch.jsx'
 import '../styles/gamesPage.css'
 import WinnerPhoto from '../components/games/WinnerPhoto.jsx'
+import { usePreloadImages } from '../hooks/usePreloadImages.js'
+import { assetPath } from '../utils/assetPath.js'
+
+const GAME_IMAGES = [
+  '/photos/games/frog-idle.png',
+  '/photos/games/frog-jump.png',
+  '/photos/games/lily-1.png', '/photos/games/lily-2.png',
+  '/photos/games/lily-3.png', '/photos/games/lily-4.png', '/photos/games/lily-5.png',
+  '/photos/games/lily-6.png', '/photos/games/lily-7.png', '/photos/games/lily-8.png',
+  '/photos/games/1.png', '/photos/games/2.jpg',
+].map(assetPath)
 
 export default function GamesPage() {
+  // Запускается один раз при открытии страницы — грузит все фото в фоне
+  usePreloadImages(GAME_IMAGES)
   const { unlockNext, allUnlocked } = useProgress()
   const navigate = useNavigate()
 

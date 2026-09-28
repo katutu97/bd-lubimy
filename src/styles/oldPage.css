@@ -26,6 +26,25 @@
   flex-shrink: 0;
 }
 
+.photo-horizontal-2 {
+  width: 520px;
+  height: 320px;
+  object-fit: cover;
+  border: 3px solid var(--color-brown);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(86, 57, 34, 0.2);
+  flex-shrink: 0;
+}
+.photo-kvadrat {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border: 3px solid var(--color-brown);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(86, 57, 34, 0.2);
+  flex-shrink: 0;
+}
+
 .pt-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -98,6 +117,50 @@
 @media (max-width: 720px) {
   .photo-text-block { flex-direction: column !important; }
   .pt-photo { width: 100%; max-width: 320px; height: 260px; }
+}
+
+/* Новые стили для нового компонента */
+.three-photos-row-extended {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 0;
+  flex-wrap: wrap;
+}
+
+/* Боковые фото - горизонтальные прямоугольники */
+.three-photos-row-extended__side {
+  width: 420px;
+  height: 320px;
+  object-fit: cover;
+  border: 3px solid var(--color-brown);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(86, 57, 34, 0.2);
+}
+
+/* Центральное фото - квадрат */
+.three-photos-row-extended__center {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border: 3px solid var(--color-brown);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(86, 57, 34, 0.2);
+}
+
+@media (max-width: 720px) {
+  .three-photos-row-extended {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .three-photos-row-extended__side,
+  .three-photos-row-extended__center {
+    width: 100%;
+    max-width: 400px;
+    height: 260px;
+  }
 }
 
 /* ЦИТАТА С ПРОПУЩЕННЫМ СЛОВОМ */

@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react'
 
-export const STEPS =['login', 'parents', 'brothers', 'friends', 'grandmas', 'me', 'closing', 'contents']
+export const STEPS =['login', 'intro', 'mom', 'dad', 'grandmas', 'brothers', 'friends', 'games', 'old', 'final', 'closing', 'contents']
 
 const ProgressContext = createContext(null)
 

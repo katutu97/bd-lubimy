@@ -45,7 +45,7 @@
     0 20px 40px rgba(86, 57, 34, 0.2);
 }
 .hero-photo-frame img { width: 100%; display: block; height: auto;  }
-.hero-text-block p{ flex: 1; font-size: 21px; line-height: 1.8; font-style: normal;  text-align: justify; text-indent: 50px;  }
+.hero-text-block p{ flex: 1; font-size: 22px; line-height: 1.8; font-style: normal;  text-align: justify; text-indent: 50px;  }
 .hero-text-block i{ font-style: italic; color: var(--color-olive-dark); }
 @media (max-width: 720px) { .hero-section { flex-direction: column; } }
 
@@ -98,6 +98,99 @@
 .date-chip { padding: 8px 14px; background: var(--color-gold); border: 1px solid var(--color-brown); color: var(--color-brown); }
 .date-chip.selected { background: var(--color-olive-light); color: #fff; }
 .game-buttons { display: flex; gap: 12px; justify-content: center; margin-top: 10px; }
+
+
+/* --- Для страницы с отцом --- */
+.photo-date-match-game { margin: 50px auto; max-width: 800px; }
+
+.photo-date-pairs {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.photo-date-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.photo-date-photo {
+  width: 360px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid var(--color-gold);
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(10, 5, 0, 0.2);
+}
+
+.photo-date-slot {
+  width: 200px;
+  height: 44px;
+  border: 1px dashed var(--color-olive-dark);
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.photo-date-slot.correct { border: 1px solid var(--color-olive-dark); background: rgba(107, 139, 61, 0.25); box-shadow: 0 0 10px var(--color-olive-light); }
+.photo-date-slot.wrong { border: 1px solid var(--color-red); background: rgba(168, 39, 0, 0.15); }
+
+
+/* --- Графический диктант --- */
+.graphic-dictation {
+  max-width: 500px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.dictation-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.dictation-form input {
+  padding: 14px 20px;
+  border: 2px solid var(--color-olive-light);
+  border-radius: 8px;
+  font-size: 22px;      
+  text-align: center;
+  min-width: 200px;
+  background: #fffdf8;
+  color: var(--color-brown);
+  font-weight: 500;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.dictation-form input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+
+.dictation-form button {
+  padding: 14px 28px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.error {
+  color: var(--color-red);
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.dictation-form input.correct {
+  border-color: var(--color-olive-dark);
+  background: #a3b86a61;  
+  box-shadow: 0 0 0 4px rgba(107, 139, 61, 0.15);
+}
 
 /* --- Gallery carousel --- */
 .gallery-section { margin: 80px 0 180px; text-align: center; }

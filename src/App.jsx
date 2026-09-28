@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import LoginPage from './pages/LoginPage.jsx'
-import ParentsPage from './pages/ParentsPage.jsx'
+import IntroPage from './pages/IntroPage.jsx'
 import FinalPage from './pages/FinalPage.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 import ClosingPage from './pages/ClosingPage.jsx'
@@ -10,6 +10,9 @@ import ScrollToTop from './components/ScrollToTop.jsx'
 import GrandmaPage from './pages/GrandmaPage.jsx'
 import GamesPage from './pages/GamesPage.jsx'
 import MomPage from './pages/MomPage.jsx'
+import DadPage from './pages/DadPage.jsx'
+import BrotherPage from './pages/BrotherPage.jsx'
+import FriendPage from './pages/FriendPage.jsx'
 
 
 export default function App() {
@@ -19,12 +22,28 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route
+            path="/intro"
+            element={<ProtectedRoute stepName="intro"><IntroPage /></ProtectedRoute>}
+          />
+          <Route
             path="/one"
             element={<ProtectedRoute stepName="mom"><MomPage /></ProtectedRoute>}
           />
           <Route
+            path="/two"
+            element={<ProtectedRoute stepName="dad"><DadPage /></ProtectedRoute>}
+          />
+          <Route
             path="/three"
             element={<ProtectedRoute stepName="grandma"><GrandmaPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/four"
+            element={<ProtectedRoute stepName="brothers"><BrotherPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/five"
+            element={<ProtectedRoute stepName="friends"><FriendPage /></ProtectedRoute>}
           />
           <Route
             path="/six"

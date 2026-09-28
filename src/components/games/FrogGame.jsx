@@ -3,15 +3,139 @@ import { useState, useRef, useLayoutEffect, useCallback } from 'react'
 const ROUNDS = [
   {
     pads: [
-      { img: '/bd-lubimy/photos/games/lily-8.png', correct: false },
-      { img: '/bd-lubimy/photos/games/lily-3.png', correct: true },
+      { img: '/photos/games/lily-8.png', correct: false },
+      { img: '/photos/games/lily-3.png', correct: true },
     ],
   },
   {
     pads: [
-      { img: '/bd-lubimy/photos/games/lily-5.png', correct: false },
-      { img: '/bd-lubimy/photos/games/lily-7.png', correct: true },
-      { img: '/bd-lubimy/photos/games/lily-2.png', correct: false },
+      { img: '/photos/games/lily-5.png', correct: false },
+      { img: '/photos/games/lily-7.png', correct: true },
+      { img: '/photos/games/lily-2.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-4.png', correct: false },
+      { img: '/photos/games/lily-8.png', correct: true },
+      { img: '/photos/games/lily-1.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-2.png', correct: true },
+      { img: '/photos/games/lily-6.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-5.png', correct: false },
+      { img: '/photos/games/lily-7.png', correct: true },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-3.png', correct: true },
+      { img: '/photos/games/lily-1.png', correct: false },
+      { img: '/photos/games/lily-8.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-2.png', correct: false },
+      { img: '/photos/games/lily-4.png', correct: false },
+      { img: '/photos/games/lily-7.png', correct: true },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-1.png', correct: false },
+      { img: '/photos/games/lily-5.png', correct: false },
+      { img: '/photos/games/lily-6.png', correct: true },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-8.png', correct: false },
+      { img: '/photos/games/lily-3.png', correct: true },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-2.png', correct: false },
+      { img: '/photos/games/lily-6.png', correct: true },
+      { img: '/photos/games/lily-1.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-4.png', correct: true },
+      { img: '/photos/games/lily-5.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-3.png', correct: true },
+      { img: '/photos/games/lily-7.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-1.png', correct: true },
+      { img: '/photos/games/lily-6.png', correct: false },
+      { img: '/photos/games/lily-8.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-4.png', correct: false },
+      { img: '/photos/games/lily-2.png', correct: true },
+      { img: '/photos/games/lily-3.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-7.png', correct: false },
+      { img: '/photos/games/lily-5.png', correct: true },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-6.png', correct: true },
+      { img: '/photos/games/lily-4.png', correct: false },
+      { img: '/photos/games/lily-1.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-5.png', correct: false },
+      { img: '/photos/games/lily-8.png', correct: true },
+      { img: '/photos/games/lily-7.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-2.png', correct: true },
+      { img: '/photos/games/lily-3.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-4.png', correct: false },
+      { img: '/photos/games/lily-8.png', correct: true },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-1.png', correct: true },
+      { img: '/photos/games/lily-2.png', correct: false },
+    ],
+  },
+  {
+    pads: [
+      { img: '/photos/games/lily-7.png', correct: false },
+      { img: '/photos/games/lily-5.png', correct: true },
+      { img: '/photos/games/lily-6.png', correct: false },
     ],
   },
 
@@ -87,7 +211,7 @@ export default function FrogGame({ onSolved }) {
     <div className="frog-game" ref={trackRef}>
       <img
         className={`frog-character ${jumping ? 'jumping' : ''}`}
-        src={jumping ? '/bd-lubimy/photos/games/frog-jump.png' : '/bd-lubimy/photos/games/frog-idle.png'}
+        src={jumping ? '/photos/games/frog-jump.png' : '/photos/games/frog-idle.png'}
         style={frogPos ? { top: frogPos.top, left: frogPos.left } : { opacity: 0 }}
         alt="лягушка"
       />

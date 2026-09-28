@@ -18,7 +18,7 @@ export default function ContentsPage() {
     { path: '/two', title: 'Глава Вторая', ornament: '♚' },
     { path: '/three', title: 'Глава Третья', ornament: '☀' },
     { path: '/four', title: 'Глава Четвёртая', ornament: '⚔' },
-    { path: '/five', title: 'Глава Пятая', ornament: '✌' },
+    { path: '/five', title: 'Глава Пятая', ornament: '☺' },
     { path: '/six', title: 'Глава Шестая', ornament: '🐟︎' },
     { path: '/seven', title: 'Глава Седьмая', ornament: '❀' },
     { path: '/eight', title: 'Глава Восьмая', ornament: '♡' },
