@@ -12,12 +12,12 @@ import { usePreloadImages } from '../hooks/usePreloadImages.js'
 import { assetPath } from '../utils/assetPath.js'
 
 const GAME_IMAGES = [
-  '/photos/games/frog-idle.png',
-  '/photos/games/frog-jump.png',
-  '/photos/games/lily-1.png', '/photos/games/lily-2.png',
-  '/photos/games/lily-3.png', '/photos/games/lily-4.png', '/photos/games/lily-5.png',
-  '/photos/games/lily-6.png', '/photos/games/lily-7.png', '/photos/games/lily-8.png',
-  '/photos/games/1.png', '/photos/games/2.jpg',
+  '/bd-lubimy/photos/games/frog-idle.png',
+  '/bd-lubimy/photos/games/frog-jump.png',
+  '/bd-lubimy/photos/games/lily-1.png', '/bd-lubimy/photos/games/lily-2.png',
+  '/bd-lubimy/photos/games/lily-3.png', '/bd-lubimy/photos/games/lily-4.png', '/bd-lubimy/photos/games/lily-5.png',
+  '/bd-lubimy/photos/games/lily-6.png', '/bd-lubimy/photos/games/lily-7.png', '/bd-lubimy/photos/games/lily-8.png',
+  '/bd-lubimy/photos/games/1.png', '/bd-lubimy/photos/games/2.jpg',
 ].map(assetPath)
 
 export default function GamesPage() {

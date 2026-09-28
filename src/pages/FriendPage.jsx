@@ -33,7 +33,7 @@ export default function FriendPage() {
       <PhotoTextBlock
         layout="photo-left"
         className="hero-photo-frame"
-        photo="/photos/friends/1.jpg"
+        photo="/bd-lubimy/photos/friends/1.jpg"
         text={
             <>
             Наша самое важное событие - это просмотр Звездных Войн. 
@@ -53,7 +53,7 @@ export default function FriendPage() {
       <PhotoTextBlock
         layout="photo-left"
         className=" hero-photo-frame"
-        photo="/photos/friends/2.jpg"
+        photo="/bd-lubimy/photos/friends/2.jpg"
         text={
             <>
             Лёша! aka Лёша ватрушка, aka Леха Пенис, с днем рождения тебя! <br />
@@ -75,7 +75,7 @@ export default function FriendPage() {
       <PhotoTextBlock
         layout="photo-right"
         className="photo-horizontal"
-        photo="/photos/friends/4.jpg"
+        photo="/bd-lubimy/photos/friends/4.jpg"
         text={
             <>
             А помнишь все наши радостные игры в <i>армрестлинг</i>. Помнишь, как каждый раз, садясь за стол, знали <i>кто</i> победит и всё равно радостно играли. 
@@ -90,7 +90,7 @@ export default function FriendPage() {
       <PhotoTextBlock
         layout="photo-left"
         className="photo-horizontal"
-        photo="/photos/friends/3.jpg"
+        photo="/bd-lubimy/photos/friends/3.jpg"
         text={
             <>
             А помнишь нашу <i>вайбовую</i> добрую поезду в <i>глобус</i>. Как мы кайфовали с <i>хлебного мяса</i>. Вы мне его буквально <i>презентовали</i>, я ведь не знал о таком раньше. Как мы нашли прикольные <i>макарошки-елочки</i>. Как мы много всего обсудили в такой необычной ламповой <i>компании</i>, которая кстати никогда больше не собиралась в таком составе. Это был <i>эксклюзив</i>! 
@@ -99,7 +99,7 @@ export default function FriendPage() {
       />
       <PhotoTextBlock
         layout="photo-right"
-        photo="/photos/friends/5.jpg"
+        photo="/bd-lubimy/photos/friends/5.jpg"
         text={
             <>
             А помнишь, как ты приметил и долго выжидал и всё же в конце купил тот красивый маленький <i>нож</i> в Осетии? Самый <i>трушный</i> сувенир увёз. Как я вас с <i>Катей</i> провожал. 
@@ -117,7 +117,7 @@ export default function FriendPage() {
       <PhotoTextBlock
         layout="photo-left"
         className=" hero-photo-frame"
-        photo="/photos/friends/6.jpg"
+        photo="/bd-lubimy/photos/friends/6.jpg"
         text={
             <>
             Лёша - один из самых <i>классных</i> людей, с кем мне доводилось пересечься по жизни. И если для того, чтобы повеселиться со многими людьми надо напиться или ещё что-то, с Лёшей никаких <i>дополнительных переменных</i> не нужно. 
@@ -129,7 +129,7 @@ export default function FriendPage() {
       <PhotoTextBlock
         layout="photo-left"
         className="photo-horizontal hero-photo-frame"
-        photo="/photos/friends/7.jpg"
+        photo="/bd-lubimy/photos/friends/7.jpg"
         text={
             <>
             Хочется сказать, что Леха <i>супер</i> добрый чувак, <i>супер</i> позитивный, <i>очень</i> отзывчивый, <i>очень</i> такой эмпатичный, эмпатичная такая <i>личность</i>.
@@ -144,7 +144,7 @@ export default function FriendPage() {
 
       <PhotoTextBlock
         layout="photo-right"
-        photo="/photos/friends/8.jpg"
+        photo="/bd-lubimy/photos/friends/8.jpg"
         text={
             <>
             У меня есть одна замечательная <i>история</i>, и она будет поучительная. Мы тогда поехали в <i>Тверь</i>. И стояли в колее, в которой была пробка. А соседняя колея была свободна. Ну и мы стоим, стоим, что-то Лёха говорит: «Парни, а что мы стоим, что мы в эту соседнюю колею не выйдем?» А там просто на@й фуры летают, б@дь.
@@ -165,7 +165,7 @@ export default function FriendPage() {
       <PhotoTextBlock
         layout="photo-left"
         className=" hero-photo-frame"
-        photo="/photos/friends/9.jpg"
+        photo="/bd-lubimy/photos/friends/9.jpg"
         text={
             <>
             Леха очень крутой и позитивный. На <i>даче</i> его работали, выдал нам джинсы крутые и <i>ежа</i> нашли. Не помню как мы его назвали. </>

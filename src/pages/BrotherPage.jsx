@@ -32,7 +32,7 @@ export default function BrotherPage() {
       <PhotoTextBlock
         layout="photo-left"
         className="photo-horizontal hero-photo-frame"
-        photo="/photos/brothers/m1.jpg"
+        photo="/bd-lubimy/photos/brothers/m1.jpg"
         text={
             <>
             Все <i>истории</i> с Лёшкой обычно делятся на две категории: <br />
@@ -50,7 +50,7 @@ export default function BrotherPage() {
       <PhotoTextBlock
         layout="photo-right"
         className="photo-horizontal"
-        photo="/photos/brothers/m3.jpg"
+        photo="/bd-lubimy/photos/brothers/m3.jpg"
         text={
             <>
             За Лёшей с самого детства сохраняется <i>любовь</i> ко всему живому. Он <i>любит</i> собак, кошек, рыбок. Любая <i>жизнь</i> для него очень важна и бесценна.
@@ -65,7 +65,7 @@ export default function BrotherPage() {
       <PhotoTextBlock
         layout="photo-left"
         className="photo-horizontal"
-        photo="/photos/brothers/m4.jpg"
+        photo="/bd-lubimy/photos/brothers/m4.jpg"
         text={
             <>
             «Старший брат - это самый близкий и родной человек, который всегда будет рядом в трудную минуту. Он может быть опорой и поддержкой, а также научить нас многому. Мудрость брата может помочь нам в жизни, дать советы и рекомендации, которые помогут нам стать лучше и успешнее.»
@@ -77,7 +77,7 @@ export default function BrotherPage() {
         type="lesson"
       />
       <ThreePhotosRowExtended
-        photos={['/photos/brothers/m6.jpg', '/photos/brothers/m5.jpg', '/photos/brothers/m7.jpg']}
+        photos={['/bd-lubimy/photos/brothers/m6.jpg', '/bd-lubimy/photos/brothers/m5.jpg', '/bd-lubimy/photos/brothers/m7.jpg']}
       />
 
       <WishCard text="Хочется что бы Лёшка оставался таким же добрым человеком, не боялся открываться родным и близким, ведь мы всегда поддержим и подскажем как действовать в любой ситуации." />
@@ -88,7 +88,7 @@ export default function BrotherPage() {
         <PhotoTextBlock
         layout="photo-left"
         className="photo-horizontal hero-photo-frame"
-        photo="/photos/brothers/a1.jpg"
+        photo="/bd-lubimy/photos/brothers/a1.jpg"
         text={
             <>
             Леша очень <i>любопытный</i>, но в детстве это не всегда играло ему на руку, а один раз сыграло на руку <i>буквально</i>. Потянув за провод с <i>утюгом</i> он получил ожог на всю жизнь. 
@@ -101,7 +101,7 @@ export default function BrotherPage() {
       />
       <PhotoTextBlock
         layout="photo-right"
-        photo="/photos/brothers/a3.jpg"
+        photo="/bd-lubimy/photos/brothers/a3.jpg"
         text={
             <>
             Как-то раз Леша <i>играл</i> в телефон и <i>не делал</i> уроки, я забрал телефон, меня попросили проконтролировать, чтобы он <i>не играл</i>. На следующий день преподаватель по математике говорит мне, что <i>злой</i> старший брат пришел и <i>выхватил</i> телефон, и из-за этого Леша не смог выполнить <i>домашнее задание</i>. 
@@ -109,11 +109,11 @@ export default function BrotherPage() {
         } 
       />
       <ThreePhotosRowExtended
-        photos={['/photos/brothers/a2.jpg', '/photos/brothers/a6.jpg', '/photos/brothers/a7.jpg']}
+        photos={['/bd-lubimy/photos/brothers/a2.jpg', '/bd-lubimy/photos/brothers/a6.jpg', '/bd-lubimy/photos/brothers/a7.jpg']}
       />
       <PhotoTextBlock
         layout="photo-left"
-        photo="/photos/brothers/a4.jpg"
+        photo="/bd-lubimy/photos/brothers/a4.jpg"
         text={
             <>
             Лешка очень любил своих <i>морских свинок</i> от Твистера и Трикси родились <i>детеныши</i>, но понять кто из них мальчик, а кто девочка мы так и не смогли.
@@ -127,7 +127,7 @@ export default function BrotherPage() {
       />
       <PhotoTextBlock
         layout="photo-right"
-        photo="/photos/brothers/a5.jpg"
+        photo="/bd-lubimy/photos/brothers/a5.jpg"
         text={
             <>
             Ну из <i>известного</i>, все, что Леша брал <i>«потрогать» </i> ломалось без исключения.
@@ -152,7 +152,7 @@ export default function BrotherPage() {
           <PhotoTextBlock
             layout="photo-left"
             className="photo-horizontal hero-photo-frame"
-            photo="/photos/brothers/s2.jpg"
+            photo="/bd-lubimy/photos/brothers/s2.jpg"
             text={
                 <>
                 Алексей, в этот определенно <i>важный</i> для нас и особенный для тебя день хочу <i>поздравить</i> тебя с днем рождения, и повспоминать важные и совместные <i>события</i> из наших с тобой <i>жизней</i>.
@@ -162,7 +162,7 @@ export default function BrotherPage() {
           <PhotoTextBlock
             layout="photo-right"
             className="photo-kvadrat"
-            photo="/photos/brothers/s3.jpg"
+            photo="/bd-lubimy/photos/brothers/s3.jpg"
             text={
                 <>
                 Безусловно вспоминается очень много всего из <i>детства</i>, наши поездки куда бы то ни было: я помню как в греции мы играли в эту <i>свинью</i>, или как в каждую из наших поездок в <i>Лермонтово</i> проводили вместе время, тогда мы почти <i>не разлучались</i>…
@@ -177,7 +177,7 @@ export default function BrotherPage() {
           <PhotoTextBlock
             layout="photo-left"
             className="photo-kvadrat"
-            photo="/photos/brothers/s4.jpg"
+            photo="/bd-lubimy/photos/brothers/s4.jpg"
             text={
                 <>
                 Наших общих воспоминаний очень много, и это очень важно для близкой <i>братской связи</i>. Много-много всего мы проходили <i>вместе</i>, вместе что-то узнавали, где-то спорили, но это делает наши узы только <i>крепче</i>.
@@ -190,7 +190,7 @@ export default function BrotherPage() {
             }
           />
           <ThreePhotosRowExtended
-            photos={['/photos/brothers/s5.jpg', '/photos/brothers/s6.jpg', '/photos/brothers/s7.jpg']}
+            photos={['/bd-lubimy/photos/brothers/s5.jpg', '/bd-lubimy/photos/brothers/s6.jpg', '/bd-lubimy/photos/brothers/s7.jpg']}
           />
           <WishCard text="Счастья, здоровья, и моментами побольше серьезности, все остальное ты сам знаешь:)" />
         
@@ -202,7 +202,7 @@ export default function BrotherPage() {
                     Ну и как же без "сестёр"... 
                   </p>
                   <ThreePhotosRowExtended
-                  photos={['/photos/brothers/sis1.jpg', '/photos/brothers/sis2.jpg', '/photos/brothers/sis3.jpg']}
+                  photos={['/bd-lubimy/photos/brothers/sis1.jpg', '/bd-lubimy/photos/brothers/sis2.jpg', '/bd-lubimy/photos/brothers/sis3.jpg']}
                   />
                   <p className="section-lead">
                     Поздравление от Томочки: 

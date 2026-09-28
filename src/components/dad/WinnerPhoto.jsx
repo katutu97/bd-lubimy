@@ -3,7 +3,7 @@ export default function WinnerPhoto() {
     <div className="winner-photo-block">
       <p className="section-lead">Странно, что не с рыбой...</p>
       <div className="winner-photo-frame">
-        <img src="/photos/parents/d6.jpg" alt="победитель" />
+        <img src="/bd-lubimy/photos/parents/d6.jpg" alt="победитель" />
       </div>
     </div>
   )

@@ -2,8 +2,8 @@ import { useState } from 'react'
 
 // два фото, каждому — правильная дата
 const PHOTOS = [
-  { id: 'p1', src: '/photos/parents/d4.jpg', correctDateId: 'd6' },
-  { id: 'p2', src: '/photos/parents/d5.jpg', correctDateId: 'd2' },
+  { id: 'p1', src: '/bd-lubimy/photos/parents/d4.jpg', correctDateId: 'd6' },
+  { id: 'p2', src: '/bd-lubimy/photos/parents/d5.jpg', correctDateId: 'd2' },
 ]
 
 // 10 вариантов дат — среди них 2 правильные и 8 "отвлекающих"

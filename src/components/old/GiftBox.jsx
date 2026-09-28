@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import PhotoZoomModal from './PhotoZoomModal.jsx'
 
-const GIFT_PHOTOS = Array.from({ length: 25 }, (_, i) => `/photos/old/gift/${i + 1}.jpg`)
+const GIFT_PHOTOS = Array.from({ length: 25 }, (_, i) => `/bd-lubimy/photos/old/gift/${i + 1}.jpg`)
 
 export default function GiftBox() {
   const [opened, setOpened] = useState(false)

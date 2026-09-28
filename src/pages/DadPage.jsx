@@ -39,7 +39,7 @@ export default function DadPage() {
       <PhotoTextBlock
         layout="photo-left"
         className=" hero-photo-frame"
-        photo='/photos/parents/d1.jpg'
+        photo='/bd-lubimy/photos/parents/d1.jpg'
         text={
           <>Когда я впервые увидел его, то подумал: "Какой <i>замечательный</i> человек!". Я был <i>счастлив</i>.</>
         }
@@ -48,7 +48,7 @@ export default function DadPage() {
       <PhotoTextBlock
         layout="photo-right"
         className="photo-horizontal"
-        photo='/photos/parents/d2.jpg'
+        photo='/bd-lubimy/photos/parents/d2.jpg'
         text={
           <>Ему года <i>3-4</i>, собираемся утром в садик, я наклоняюсь перед ним, чтобы завязать ему <i>шнурки</i>, а Лешка, видя мою голову сверху, <i>тыкает</i> мне указательным <i>пальцем</i> в начинающую появляться лысину и говорит: "Папа, а у тебя в голове <i>дырка</i>!"</>
         }
@@ -62,7 +62,7 @@ export default function DadPage() {
           <PhotoTextBlock
             layout="photo-left"
             className="photo-horizontal"
-            photo='/photos/parents/d3.jpg'
+            photo='/bd-lubimy/photos/parents/d3.jpg'
             text={<>Он много чем отливается от остальных, все братья <i>разные</i>, каждый со своим <i>характером</i>.</>}
             text2={<>Лешка <i>держит в себе</i> свои желания и помыслы, редко делится ими и с твердой настойчивостью <i>идёт</i> к намеченной цели.</>}
           />

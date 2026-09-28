@@ -33,7 +33,7 @@ export default function GrandmaPage() {
       <PhotoTextBlock
         layout="photo-left"
         className="hero-photo-frame"
-        photo="/photos/grandmas/g1.jpg"
+        photo="/bd-lubimy/photos/grandmas/g1.jpg"
         text={
           <>
             Леша был <i>неспокойный</i> ребёнок, очень <i>неспокойный</i>. Я когда его укладывала спать, ты не представляешь… Я его сначала в коляску укладывала, укачивала его как следует, потом перекладывала в кроватку. Но не сразу получалось. Опять приходилось его вытаскивать, опять его в коляску, опять его катать, пока он не успокоился.
@@ -48,7 +48,7 @@ export default function GrandmaPage() {
 
       <PhotoTextBlock
         layout="photo-right"
-        photo="/photos/grandmas/g2.jpg"
+        photo="/bd-lubimy/photos/grandmas/g2.jpg"
         text={
           <>
             Помню, как отводила его в детский сад. Он сначала ходил в ясли в один детский сад вместе с Сашенькой.
@@ -69,7 +69,7 @@ export default function GrandmaPage() {
       <PhotoTextBlock
         layout="photo-left"
         className="photo-horizontal"
-        photo="/photos/grandmas/g4.jpg"
+        photo="/bd-lubimy/photos/grandmas/g4.jpg"
         text={
           <>
             Когда он был маленький я гуляла с ним в сквере у дома. Там в хорошем состоянии была детская площадка, горки, и прочее. Он был как <i>юла</i>. Он не сидел на месте, он бегал-бегал-бегал-бегал. Как-то раз соседка гуляла с маленьким ребенком и тут меня спрашивает: «Он у вас <i>ходить-то</i> умеет?» Я говорю: «Как не умеет? Конечно умеет». Да она говорит: «Он у вас только <i>бегает</i>, а не ходит.»
@@ -79,7 +79,7 @@ export default function GrandmaPage() {
 
       <PhotoTextBlock
         layout="photo-right"
-        photo="/photos/grandmas/g5.jpg"
+        photo="/bd-lubimy/photos/grandmas/g5.jpg"
         text={
           <>
             В четвертом классе они всей семьей <i>уехали</i> из Владимира. Катя работала в той же школе, где и учился Леша до этого самого четвертого класса, и с учительницей Лёши <i>не сложились</i> какие-то отношения. А когда он уже приехал в Питер, учительница маме Кате говорит: «Я не понимаю, почему у ребёнка одни <i>тройки</i>. Пришел совсем с хорошими знаниями ребенок».
@@ -104,7 +104,7 @@ export default function GrandmaPage() {
           <PhotoTextBlock
             layout="photo-left"
             className="hero-photo-frame"
-            photo="/photos/grandmas/t1.jpg"
+            photo="/bd-lubimy/photos/grandmas/t1.jpg"
             text={
               <>
                 Леша ходил в школу, где работала Катя, и поэтому он был один из тех людей, которые первого сентября <i>приветствовали</i> начало учебного года. Он выступал с приветствием к началу учебного года. Выступал очень <i>громко</i>, очень, так сказать, <i>хорошо</i>!
@@ -141,7 +141,7 @@ export default function GrandmaPage() {
           <PhotoTextBlock
             layout="photo-right"
             className="photo-horizontal"
-            photo="/photos/grandmas/t2.jpg"
+            photo="/bd-lubimy/photos/grandmas/t2.jpg"
             text={
               <>
                 Вот <i>музыкальная школа</i> у него, конечно, определённый хороший этап. Потому что в музыкальной школе он играл на <i>балалайке</i>. Еще он <i>пел</i> в школе, по-моему, там два мальчика было. Он там и <i>говорил</i>, в общем, и <i>солировал</i>, так что у него народный такой вариант был детского ансамбля.
@@ -157,7 +157,7 @@ export default function GrandmaPage() {
           <PhotoTextBlock
             layout="photo-left"
             className="photo-blur-hover"
-            photo="/photos/grandmas/t3.jpg"
+            photo="/bd-lubimy/photos/grandmas/t3.jpg"
             text={
               <>
                 Ну надо сказать, у него была определённая <i>любовь к балалайке</i>. Балалайку он любил. И в общем, не всегда у него получалось разбираться, поэтому <i>мы</i> одно время, когда он приезжал летом сюда с балалайками, мы с ним <i>разбирали</i> его программы и всё такое прочее.
@@ -185,7 +185,7 @@ export default function GrandmaPage() {
           <PhotoTextBlock
             layout="photo-left"
             className="photo-horizontal"
-            photo="/photos/grandmas/t4.jpg"
+            photo="/bd-lubimy/photos/grandmas/t4.jpg"
             text={
               <>
                 Так что <i>любовь</i> к животным у него была. Сейчас он, по-моему, не так как раньше их любит. Тогда он держит их в <i>строгости</i>. Говорит, что надо строго всё и кошек, и собак <i>строго</i> содержать.
@@ -201,7 +201,7 @@ export default function GrandmaPage() {
           <PhotoTextBlock
             layout="photo-right"
             className="photo-horizontal-2"
-            photo="/photos/grandmas/t5.jpg"
+            photo="/bd-lubimy/photos/grandmas/t5.jpg"
             text={
               <>
                 Был еще такой <i>случай</i>, когда я собиралась приехать. Я иду спокойненько. От Леши: «Бабушка, я тебя <i>встречу</i>». Я говорю: «Не надо, Лёшенька, не надо». Я, значит, вхожу в ворота и там «Бабушка, бабушка, едем <i>ко мне</i>». Я говорю: «Я еду домой <i>к себе</i>». А он мне «Нет, бабушка, едем ко мне. У меня <i>ужин</i>». У меня хлеба не было, мы зашли в магазинчик за хлебом и продукты подкупили. Я говорю: «Лёшка, я <i>там</i> давно не спала». «А уж как ты давно не спала? Ты помнишь, что недавно уходила от бабушки Гали». Но я спала <i>чудесно</i>, вот очень хорошо там спала.
@@ -212,7 +212,7 @@ export default function GrandmaPage() {
           <PhotoTextBlock
             layout="photo-left"
             className="photo-horizontal"
-            photo="/photos/grandmas/t6.jpg"
+            photo="/bd-lubimy/photos/grandmas/t6.jpg"
             text={
               <>
                 Он не такой, как все. <i>Не такой</i>. Он больше открыт, чем все остальные. Он просто <i>открытый</i> человек. И потом вот его отношение к родителям <i>особенное</i>. Никто, кроме него не называет маму <i>«Мамулечка»</i>.
