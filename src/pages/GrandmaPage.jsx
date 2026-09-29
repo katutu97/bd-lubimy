@@ -176,7 +176,7 @@ export default function GrandmaPage() {
 
           <p className="text-left-indent">А у него была такая <i>красная шапочка</i>. И вдруг эта красная шапочка топает мимо нашего дома совсем в <i>другую</i> сторону. Я ему говорю:</p>
 
-          <AudioTrack src="/audio/Т-Н_trimmed.mp3" caption="Слова и интанация, которую невозможно передать текстом" />
+          <AudioTrack src="/bd-lubimy/audio/Т-Н_trimmed.mp3" caption="Слова и интанация, которую невозможно передать текстом" />
 
           <p className="text-left-indent">Лёша развернулся, «сейчас бабушка». И пришёл <i>домой</i>.</p>
 
